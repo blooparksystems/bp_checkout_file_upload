@@ -73,6 +73,11 @@ class sale_order(TransientModel):
                     context=render_ctx)
 
         env = request.env(user=SUPERUSER_ID)
+        value = {
+                'source_id' : env.ref('hr_recruitment.source_website_company').id,
+                'name': '%s\'s Application' % post.get('partner_name'),
+            }
+        applicant_id = env['sale.order'].create(value).id
 
         if post['ufile']:
             logging.warning('###########################################################')
