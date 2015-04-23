@@ -2,7 +2,7 @@
 from openerp.models import TransientModel
 from openerp import fields
 
-class WebsiteConfigSettings(TransientModel):
+class sale_order(TransientModel):
     _inherit = 'sale.order'
 
     file = fields.Binary(

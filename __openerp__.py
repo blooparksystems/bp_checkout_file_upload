@@ -17,11 +17,13 @@
     'depends': [
         'base',
         'website',
-        'website_sale'
+        'website_sale',
+        'document',
     ],
 
     'data': [
-        'views/template.xml'
+        'views/template.xml',
+        'views/backend.xml',
     ],
 
     'demo': [],
