@@ -5,8 +5,9 @@
 		<template id="upload_field" inherit_id="website_sale.checkout" name="Checkout File Upload">
 			<xpath expr="//div[@class='col-md-8 oe_cart']" position="after">
 				<div t-attf-class="form-group #{error.get('file') and 'has-error' or ''} col-lg-6">
-					<input class="input-file" id="fileInput" type="file" name="ufile"/>
-                    <span t-if="error.get('ufile')">Please send again your resume.</span>
+					<label class="control-label" for="file" style="font-weight: normal">File Upload
+					</label>
+					<input type="file" name="file" class="form-control" />
 				</div>
 			</xpath>
 		</template>
