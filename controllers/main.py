@@ -49,12 +49,12 @@ class website_sale(website_sale):
 
         if post['ufile']:
             attachment_value = {
-                'name': post['ufile'],                          #'name': post['ufile'].filename
+                'name': post['ufile'].filename,
                 'res_name': post['name'],
                 'res_model': 'sale.order',
                 'res_id': order.id,
-                'datas': base64.encodestring(post['ufile']),    # .read()
-                'datas_fname': post['ufile'],                   # .filename,
+                'datas': base64.encodestring(post['ufile'].read()),
+                'datas_fname': post['ufile'].filename,
             }
             env['ir.attachment'].create(attachment_value)
 
