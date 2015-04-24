@@ -46,7 +46,7 @@ class website_sale(website_sale):
             return request.redirect('/shop/checkout')
 
         env = request.env(user=SUPERUSER_ID)
-        logging.warning(post)
+
         if post['ufile']:
             attachment_value = {
                 'name': post['ufile'],                          #'name': post['ufile'].filename
