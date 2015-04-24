@@ -23,7 +23,6 @@
 
     'data': [
         'views/template.xml',
-        'views/backend.xml',
     ],
 
     'demo': [],
