@@ -149,6 +149,16 @@
 												</option>
 											</select>
 										</div>
+										<div t-attf-class="form-group #{error.get('ufile') and 'has-error' or ''} col-lg-6">
+											<label class="input-file" for="fileInput"
+												   style="font-weight: normal">
+												Attach a file:
+											</label>
+											<input class="form-control" id="fileInput" type="file"
+												   name="ufile"/>
+											<span t-if="error.get('ufile')">Please send again.
+											</span>
+										</div>
 									</div>
 									<div class="js_shipping row mb16"
 										 t-att-style="not shipping_id and 'display:none' or ''">
@@ -244,14 +254,6 @@
 											<span class="fa fa-long-arrow-right"/>
 										</a>
 									</div>
-								</div>
-								<div t-attf-class="form-group #{error.get('ufile') and 'has-error' or ''} col-lg-6">
-									<label class="control-label" for="fileInput" style="font-weight: normal">
-										Attach a file:
-									</label>
-									<input class="input-file" id="fileInput" type="file"
-										   name="ufile"/>
-									<span t-if="error.get('ufile')">Please send again.</span>
 								</div>
 								<div class="col-lg-offset-1 col-lg-3 col-md-3 text-muted">
 									<h3 class="page-header mt16">Your Order
