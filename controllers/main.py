@@ -26,10 +26,6 @@ from openerp.http import request
 from openerp.addons.website_sale.controllers.main import website_sale
 
 
-import logging
-_logger = logging.getLogger(__name__)
-
-
 class website_sale(website_sale):
 
     """override the confirm_order from website_sale."""

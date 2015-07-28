@@ -20,16 +20,14 @@
 ##############################################################################
 {
     'name': "Checkout File Upload",
-
     'summary': """
         Gives the Checkout the option to upload files like PDF and Pictures""",
-
     'description': """
-          Gives the Checkout the option to upload files like PDF and Pictures""",
-
+          Gives the Checkout the option to upload files like PDF and Pictures
+    """,
     'author': "bloopark systems GmbH & Co. KG",
     'website': "http://www.bloopark.de",
-
+    'license': 'AGPL-3',
     'category': 'shop',
     'version': '1.0',
 
@@ -44,7 +42,4 @@
         'views/template.xml',
     ],
 
-    'demo': [],
-
-    'tests': [],
 }
